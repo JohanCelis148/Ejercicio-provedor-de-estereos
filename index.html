@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="asset/css/index.css" />
+    <title>Provedor de Estereos</title>
+  </head>
+  <body>
+    <form action="logica/calcular.php" method="post">
+      <fieldset><br><br><br>
+        <h2>Ejercicio provedor de estereos</h2>
+        <br>
+        <p>Un proveedor de estereos ofrece un descuento del 10 sobre el precio sin IVA, de algún aparato si este cuesta $2000 o más. Además, independientemente de esto, ofrece un 5% de descuento si la marca es “LG”. Determinar cuánto pagara, con IVA incluido, un cliente cualquiera por la compra de su aparato.</p>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label mt-4"
+            >Precio Producto</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Ingrese precio Producto" name="precio"
+          />
+        </div>
+
+        <div class="form-group">
+            <label for="exampleSelect1" class="form-label mt-4"
+              >Marca Producto</label
+            >
+            <select class="form-select" id="exampleSelect1" name="marca">
+              <option selected="" selected disabled hidden>Seleccione...</option>
+              <option value="KALLEY">KALLEY</option>
+              <option value="LG">LG</option>
+              <option value="NOSY">NOSY</option>
+              <option value="HISENSE">HISENSE</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleSelect1" class="form-label mt-4"
+              >%Iva</label
+            >
+            <select class="form-select" id="exampleSelect1" name="iva">
+              <option selected="" selected disabled hidden>Seleccione...</option>
+              <option value="16">16%</option>
+              <option value="19">19%</option>
+            </select>
+        </div>
+        
+        <br>
+        <button type="submit" class="btn btn-primary" name="btn" style="background-color: green; border: none;">Calcular Valor pagar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
