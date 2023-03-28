@@ -1,6 +1,5 @@
 <?php
 
-//Pregunta 1 : Boleano
 
 $precio=$_POST['precio'];
 $marca=$_POST['marca'];
